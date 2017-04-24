@@ -169,7 +169,7 @@ def xyz(x_dict):
 class cost(APIView):
 
     def get(self, request):
-        return Response({"Hello JSON file just like given below, all items in order and their corresponding quantity/weight as per the customer requirement":" ",
+        unordered_dict ={"Hello JSON file just like given below, all items in order and their corresponding quantity/weight as per the customer requirement":" ",
 "A":3,
 "B":0,
 "C":0,
@@ -179,7 +179,9 @@ class cost(APIView):
 "G":0,
 "H":0,
 "I":0
-})
+}       
+        ordered_response = collections.OrderedDict(unordered_dict)
+        return Response(ordered_response)
     def post(self, request):
         data = request.data
         print(data)
