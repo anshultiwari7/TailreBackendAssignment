@@ -169,19 +169,8 @@ def xyz(x_dict):
 class cost(APIView):
 
     def get(self, request):
-        ordered_dict =[("Hello JSON file just like given below, all items in order and their corresponding quantity/weight as per the customer requirement"," "),
-("A",3),
-("B",0),
-("C",0),
-("D",12),
-("E",0),
-("F",0),
-("G",0),
-("H",0),
-("I",0)]                  
-        
-        ordered_dict = collections.OrderedDict(ordered_dict)
-        return Response(ordered_dict)
+        return Response({"Input keys(or say items) A,B,C,D,E,F,G,H and I in order" : "Weight (or say Quantity) correpsonding to each item as per the customer wish"})                
+       
     def post(self, request):
         data = request.data
         print(data)
