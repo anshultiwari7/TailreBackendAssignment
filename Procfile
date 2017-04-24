@@ -1,0 +1,1 @@
+web: guinicorn TailreBackend.wsgi:application
