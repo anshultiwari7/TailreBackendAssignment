@@ -169,7 +169,7 @@ def xyz(x_dict):
 class cost(APIView):
 
     def get(self, request):
-        return Response("Input exactly like this and in the same order but can change the values for corresponding items\n"+{
+        return Response("Input exactly like this and in the same order but can change the values for corresponding items\"+{
 "A":3,
 "B":0,
 "C":0,
