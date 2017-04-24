@@ -25,7 +25,7 @@ SECRET_KEY = 'ugsr+d_wgo+zc370dh-^0zm%=79-ufpp^_z(q=ej@w!9am)g+2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tailrebackend.herokuapp.com','127.0.0.1']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
