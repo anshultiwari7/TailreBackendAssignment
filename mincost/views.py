@@ -169,17 +169,7 @@ def xyz(x_dict):
 class cost(APIView):
 
     def get(self, request):
-        return Response("Input exactly like this and in the same order but can change the values for corresponding items\"+{
-"A":3,
-"B":0,
-"C":0,
-"D":12,
-"Ez:0,
-"F":0,
-"G":0,
-"H":0,
-"I":0
-})
+        return Response("Hello World Input JSON file with A,B,C,D,E,F,G,I in order and their quantities corresponding each key":"")
 
     def post(self, request):
         data = request.data
