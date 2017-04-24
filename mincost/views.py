@@ -169,8 +169,17 @@ def xyz(x_dict):
 class cost(APIView):
 
     def get(self, request):
-        return Response({"Hello World Input JSON file with A,B,C,D,E,F,G,I in order and their quantities corresponding each key":""})
-
+        return Response({"Hello JSON file just like given below, all items in order and their corresponding quantity/weight as per the customer requirement":" ",
+"A":3,
+"B":0,
+"C":0,
+"D":12,
+"E":0,
+"F":0,
+"G":0,
+"H":0,
+"I":0
+})
     def post(self, request):
         data = request.data
         print(data)
