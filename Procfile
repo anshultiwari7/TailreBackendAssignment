@@ -1,1 +1,1 @@
-web: guinicorn TailreBackend.wsgi:application
+web: gunicorn TailreBackend.wsgi:application
